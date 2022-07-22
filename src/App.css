@@ -1,38 +1,116 @@
+body {
+  background: lightgray;
+  display: flex;
+  justify-content: center;
+}
+
 .App {
-  text-align: center;
+  width: 550px;
+  background: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F55A5A;
+  gap: 7px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header--logo {
+  width: 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header--text {
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.075em;
+}
+
+.journals {
+  padding-block: 20px;
+  padding-inline: 40px;
+}
+
+.journals > .journal + .journal {
+  border-top: 1px solid #F5F5F5;
+}
+
+.journals .journal:first-child {
+  padding-top: 0;
+}
+
+.journals .journal:last-child {
+  padding-bottom: 0;
+}
+
+.journal--box {
   display: flex;
   flex-direction: column;
+}
+
+.journal--box > div + div {
+  border-top: 1px solid #ddd;
+  }
+
+.journal {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 19px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.journal--img {
+  width: 125px;
+  height: 168px;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.journal--text--pointer {
+  width: 7px;
+  padding-right: 4px;
+}
+
+.journal--text--country {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.17em;
+  color: #2B283A;
+  padding-right: 12px;
+}
+
+.journal--text--google {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  text-decoration-line: underline;
+  color: #918E9B;
+}
+
+.journal--text--title {
+  font-size: 25px;
+  line-height: 30px;
+  color: #2B283A;
+  margin-top: 7px;
+  margin-bottom: 0;
+}
+
+.journal--text--date {
+  font-size: 10px;
+  line-height: 12px;
+  color: #2B283A;
+  margin-top: 14px;
+  margin-bottom: 0;
+}
+
+.journal--text--desc {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
+  color: #2B283A;
 }
