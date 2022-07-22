@@ -13,7 +13,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Links
 
 [Figma Design](https://www.figma.com/file/QG4cOExkdbIbhSfWJhs2gs/Travel-Journal)
-
+[Live Version](https://roob-travel-journal.netlify.app)
 
 
 ### Built with
