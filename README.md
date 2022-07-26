@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### Requirements
 
 - Data array in a separate .js file
-- Title, description, price, cover image, rating, review count, location, open spots
+- Title, locatiion, Google Maps link, start date, end date, description, image url
 - Use .map() and props
 - Style & polished
 - Mobile only designed
